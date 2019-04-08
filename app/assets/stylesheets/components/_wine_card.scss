@@ -1,0 +1,110 @@
+.wine-card {
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+  border: solid 2px #FFF1F1;
+}
+
+.wine-card:hover {
+  box-shadow: 0 0 15px black;
+  transition: box-shadow 200ms linear;
+  border: none;
+}
+
+.wine-card-product-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: red;
+  .large-wine-bottle {
+    height: 300px;
+    width: auto;
+  }
+  .product-img-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .product-fruit-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.wine-card-product-fruits {
+  margin-top: -30px;
+  margin-left: 10px;
+  .fruiticon {
+    height: 30px;
+    width: 30px;
+    margin-top: -10px;
+    margin-right: 10px;
+  }
+}
+
+.wine-card-price {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  p {
+    margin-bottom: 0;
+  }
+  .add-btn {
+    color: #FF6B6B;
+  }
+}
+
+.wine-card-price:hover {
+  background: #FFF1F1;
+  transition: background 200ms linear;
+  border-top: none;
+}
+
+.wine-card-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 25%;
+  width: 100%;
+  padding: 20px;
+  .wine-name {
+    margin-top: 20px;
+  }
+}
+
+.palm-trees {
+  background: #E4572E
+}
+
+.beach-views {
+  background: #F6BD60
+}
+
+.sunglow-in-the-dark {
+  background: #FF6B6B
+}
+
+.covered-eyes {
+  background: #A40E4C
+}
+
+.flirt-at-night {
+  background: #8D5A97
+}
+
+.slow-motion {
+  background: #A63D40
+}

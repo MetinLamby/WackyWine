@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="navbar-left">
-    <%= link_to "#" do %>
+    <%= link_to wines_path do %>
     <div class="wacky-btn">
       <p>Shop</p>
     </div>
@@ -15,9 +15,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+  <%= link_to root_path do %>
   <div class="nav-bar-logo">
     <h3>Wacky / Wine</h3>
   </div>
+  <% end %>
 
   <div class="navbar-right">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

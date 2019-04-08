@@ -12,3 +12,19 @@
     flex-direction: column;
   }
 }
+
+
+.small-banner {
+  height: 50vh;
+  width: 100vw;
+  background: #FF6B6B;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .small-banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}

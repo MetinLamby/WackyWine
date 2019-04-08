@@ -1,0 +1,42 @@
+.wine-index-filters {
+  height: 80px;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.wine-index-filter-left {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  p {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.wine-index-filter-right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  p {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.wine-index-filters {
+  a {
+    color: black !important;
+  }
+  a:hover {
+    color: #FF6B6B !important;
+    text-decoration: none;
+  }
+}

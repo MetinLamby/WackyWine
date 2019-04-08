@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_08_120850) do
+ActiveRecord::Schema.define(version: 2019_04_08_121632) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "fruits", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +33,32 @@ ActiveRecord::Schema.define(version: 2019_04_08_120850) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "wine_fruits", force: :cascade do |t|
+    t.bigint "wine_id"
+    t.bigint "fruit_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["fruit_id"], name: "index_wine_fruits_on_fruit_id"
+    t.index ["wine_id"], name: "index_wine_fruits_on_wine_id"
+  end
+
+  create_table "wines", force: :cascade do |t|
+    t.string "sku"
+    t.string "name"
+    t.bigint "winetype_id"
+    t.string "photo_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["winetype_id"], name: "index_wines_on_winetype_id"
+  end
+
+  create_table "winetypes", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "wine_fruits", "fruits"
+  add_foreign_key "wine_fruits", "wines"
+  add_foreign_key "wines", "winetypes"
 end

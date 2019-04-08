@@ -1,0 +1,14 @@
+.banner {
+  height: 92vh;
+  width: 100vw;
+  background: #FF6B6B;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}

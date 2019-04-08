@@ -1,0 +1,19 @@
+.wacky-btn {
+  background: #FF6B6B;
+  height: 30px;
+  width: 160px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+.wacky-btn:hover {
+  background: white;
+  color: #FF6B6B;
+  border: solid 3px #FF6B6B;
+}

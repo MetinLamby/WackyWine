@@ -39,7 +39,7 @@
         <%= image_tag('dose.png', class:"wine-bottle") %>
       </div>
     </div>
-    <p style="font-size: 23px;">Wacky. Unusual in a pleasing and exciting or silly way. This is who we are.</p>
+    <p style="font-size: 23px; margin-top: 40px;">Wacky. Unusual in a pleasing and exciting or silly way. This is who we are.</p>
   </div>
 </div>
 
@@ -61,6 +61,32 @@
     <div class="background-circle-right">
       <%#= image_tag('y-wine.png', class:"wine-bottle-big") %>
       <%= image_tag('dose.png', class:"large-wine-bottle") %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="wackywine-what">
+  <div class="wackywine-what-right wackywine-desc-second-left">
+    <div class="background-circle-right">
+      <%#= image_tag('y-wine.png', class:"wine-bottle-big") %>
+      <%= image_tag('dose.png', class:"large-wine-bottle") %>
+    </div>
+  </div>
+  <div class="wackywine-what-left wackywine-desc-second-right">
+    <div class="background-circle-left">
+      <div style="margin-left: 20px;">
+        <h2>Wine in a can? Why not.</h2>
+        <p>We like to do things differently. Enjoy a wackywine wherever and whenever you want.</p>
+        <%= link_to wines_path do %>
+        <div class="wacky-btn">
+          <p>Shop</p>
+        </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

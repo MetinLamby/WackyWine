@@ -1,0 +1,9 @@
+<h1 class="hololo">This is the wine show page</h1>
+
+<%= @wine.name %>
+
+
+<%= form_tag orders_path do %>
+  <%= hidden_field_tag 'wine_id', @wine.id %>
+  <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+<% end %>

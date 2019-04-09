@@ -4,4 +4,6 @@ class Wine < ApplicationRecord
   has_many :fruits, through: :wine_fruits
 
   validates :name, uniqueness: true, presence: true
+
+  monetize :price_cents
 end

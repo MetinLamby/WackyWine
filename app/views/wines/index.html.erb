@@ -29,6 +29,7 @@
     <div style="margin-top: 40px" class="row">
       <% @white_wines.each do |wine|%>
       <div class="col-sm-12 col-md-4 col-lg-4">
+        <%= link_to wine_path(wine.id) do  %>
         <div class="wine-card">
           <div class="wine-card-product-image">
               <%= image_tag('y-wine.png', class:"large-wine-bottle") %>
@@ -73,10 +74,11 @@
             </div>
           </div>
           <div class="wine-card-price">
-            <p>Price</p>
+            <p><%= humanized_money_with_symbol(wine.price) %></p>
             <p id="red-wines" class="add-btn">Add</p>
           </div>
         </div>
+        <% end %>
       </div>
       <% end %>
     </div>
@@ -89,6 +91,7 @@
     <div style="margin-top: 40px" class="row">
       <% @red_wines.each do |wine|%>
       <div class="col-sm-12 col-md-4 col-lg-4">
+        <%= link_to wine_path(wine.id) do  %>
         <div class="wine-card">
           <div class="wine-card-product-image">
             <%= image_tag('y-wine.png', class:"large-wine-bottle") %>
@@ -133,10 +136,11 @@
             </div>
           </div>
           <div class="wine-card-price">
-            <p>Price</p>
+            <p><%= humanized_money_with_symbol(wine.price) %></p>
             <p class="add-btn">Add</p>
           </div>
         </div>
+        <% end %>
       </div>
       <% end %>
     </div>

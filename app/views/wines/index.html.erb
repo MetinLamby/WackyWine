@@ -15,15 +15,15 @@
       <a href="#white-wines"><p>White Wines</p></a>
       <a href="#red-wines"><p>Red Wines</p></a>
     </div>
-    <div class="wine-index-filter-right">
+<!--     <div class="wine-index-filter-right">
       <p>Filter by Tastes</p>
       <i class="fas fa-filter"></i>
-    </div>
+    </div> -->
   </div>
 
 <!--   White wines index -->
 
-
+  <% if @white_wines.present? %>
   <div style="margin-top: 100px; margin-bottom: 100px;" class="container">
     <h3>White Wines</h3>
     <div style="margin-top: 40px" class="row">
@@ -83,9 +83,11 @@
       <% end %>
     </div>
   </div>
+  <% end %>
 
 <!--   Red wines index -->
 
+<% if @red_wines.present? %>
   <div style="margin-top: 100px; margin-bottom: 100px;" class="container">
     <h3>Red Wines</h3>
     <div style="margin-top: 40px" class="row">
@@ -145,4 +147,5 @@
       <% end %>
     </div>
   </div>
+  <% end %>
 </div>

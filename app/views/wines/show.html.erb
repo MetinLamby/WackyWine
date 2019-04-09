@@ -3,7 +3,7 @@
     <div class="inner-circle">
       <div>
         <h1 class="wine-name-show"><%= @wine.name %></h1>
-        <h4><%= @wine.winetype.name.capitalize %></h4>
+        <h6 style="color: grey"><%= @wine.winetype.name.capitalize %> Wine</h6>
       </div>
       <div class="wine-card-product-fruits fruits-show-page">
             <% @wine.fruits.each do |fruit| %>
@@ -78,7 +78,8 @@
   </div>
   <div class="second-half-product">
     <div class="inner-circle">
-      <%= image_tag('y-wine.png', class:"wine-bottle-big") %>
+      <%#= image_tag('y-wine.png', class:"wine-bottle-big") %>
+      <%= image_tag('dose.png', class:"wine-bottle-big") %>
     </div>
   </div>
 </div>

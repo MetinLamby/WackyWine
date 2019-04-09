@@ -8,6 +8,22 @@
   align-items: center;
   justify-content: space-around;
   border: none;
+  padding: 0 !important;
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+.wacky-btn-opposite {
+  background: white;
+  height: 30px;
+  width: 160px;
+  border-radius: 15px;
+  color: #FF6B6B;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 3px #FF6B6B;
   p {
     margin-bottom: 0 !important;
   }
@@ -34,6 +50,11 @@
   border: solid 3px #FF6B6B;
 }
 
+.wacky-btn-opposite:hover {
+  background: #FF6B6B;
+  color: white;
+  border: none;
+}
 .purchase-btn:hover {
   background: white;
   color: #FF6B6B;

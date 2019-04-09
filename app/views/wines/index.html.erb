@@ -3,8 +3,8 @@
     <div class="container">
       <div class="small-banner-text">
         <h1>Tasty Wine made just for You</h1>
-        <h4>Qulatity wine for you to enjoy.</h4>
-        <h4>Quality design for you to understand.</h4>
+        <h5>Qulatity wine for you to enjoy.</h5>
+        <h5>Quality design for you to understand.</h5>
       </div>
     </div>
   </div>
@@ -32,7 +32,8 @@
         <%= link_to wine_path(wine.id) do  %>
         <div class="wine-card">
           <div class="wine-card-product-image">
-              <%= image_tag('y-wine.png', class:"large-wine-bottle") %>
+              <%#= image_tag('y-wine.png', class:"large-wine-bottle") %>
+              <%= image_tag('dose.png', class:"wine-bottle") %>
           </div>
           <div class="wine-card-product-fruits">
             <% wine.fruits.each do |fruit| %>
@@ -67,9 +68,9 @@
             <div>
               <h4 class="wine-name"><%= wine.name %></h4>
             </div>
-            <div>
-              <% wine.fruits.each do |fruit| %>
-                <%= fruit.name %>
+            <div style="display: flex;">
+              <% wine.fruits.each do |fruit|%>
+                <p style="margin-right: 10px; color: grey"><%= fruit.name %></p>
               <% end %>
             </div>
           </div>
@@ -96,7 +97,8 @@
         <%= link_to wine_path(wine.id) do  %>
         <div class="wine-card">
           <div class="wine-card-product-image">
-            <%= image_tag('y-wine.png', class:"large-wine-bottle") %>
+            <%#= image_tag('y-wine.png', class:"large-wine-bottle") %>
+            <%= image_tag('dose.png', class:"wine-bottle") %>
           </div>
            <div class="wine-card-product-fruits">
             <% wine.fruits.each do |fruit| %>
@@ -131,9 +133,9 @@
             <div>
               <h4 class="wine-name"><%= wine.name %></h4>
             </div>
-            <div>
-              <% wine.fruits.each do |fruit| %>
-                <%= fruit.name %>
+            <div style="display: flex;">
+              <% wine.fruits.each do |fruit|%>
+                <p style="margin-right: 10px; color: grey"><%= fruit.name %></p>
               <% end %>
             </div>
           </div>

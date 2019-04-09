@@ -1,0 +1,19 @@
+.login-outside {
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 80px;
+  color: black;
+  .login-card {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: #FFE4E4;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

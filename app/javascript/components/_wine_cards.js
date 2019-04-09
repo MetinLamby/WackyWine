@@ -29,16 +29,19 @@ wineindex.forEach(x => checkconditionthree(x))
 
 // js for snake in hame page
 
-const snake = document.querySelectorAll(".products-array-snake")
-const ball = document.querySelectorAll(".bottle-array-circle")
+window.onload=function(){
+  const snake = document.querySelectorAll(".products-array-snake")
+  const ball = document.querySelectorAll(".bottle-array-circle")
 
-snake[0].addEventListener('mouseover', (event) => {
-  ball.forEach(b => b.classList.add("new-margin"))
-})
 
-snake[0].addEventListener('mouseout', (event) => {
-  ball.forEach(b => b.classList.remove("new-margin"))
-})
+  snake[0].addEventListener('mouseover', (event) => {
+    ball.forEach(b => b.classList.add("new-margin"))
+  })
+
+  snake[0].addEventListener('mouseout', (event) => {
+    ball.forEach(b => b.classList.remove("new-margin"))
+  })
+}
 
 
 

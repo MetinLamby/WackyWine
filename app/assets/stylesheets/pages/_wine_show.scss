@@ -8,12 +8,12 @@
   .first-half-text {
     height: 100%;
     width: 50%;
-    background: red;
+    background: #E4572E;
     display: flex;
     align-items: center;
     justify-content: space-around;
     .inner-circle {
-      background: green;
+      background: #FAE0D9;
       height: 400px;
       width: 400px;
       border-radius: 50%;
@@ -46,18 +46,90 @@
   .second-half-product {
     height: 100%;
     width: 50%;
-    background: green;
+    background: #FAE0D9;
     display: flex;
     align-items: center;
     justify-content: space-around;
     .inner-circle {
-      background: red;
+      background: #E4572E;
       height: 400px;
       width: 400px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: space-around;
+    }
+  }
+  .beach-views {
+    background: #F6BD60;
+    .inner-circle {
+      background: #FDF3E2;
+    }
+  }
+  .beach-views-right {
+    background: #FDF3E2;
+    .inner-circle {
+      background: #F6BD60;
+    }
+  }
+  .covered-eyes {
+    background: #A40E4C;
+    .inner-circle {
+      background: #EED3DE;
+    }
+  }
+  .covered-eyes-right {
+    background: #EED3DE;
+    .inner-circle {
+      background: #A40E4C;
+    }
+  }
+  .flirt-at-night {
+    background: #8D5A97;
+    .inner-circle {
+      background: #EAE1EC;
+    }
+  }
+  .flirt-at-night-right {
+    background: #EAE1EC;
+    .inner-circle {
+      background: #8D5A97;
+    }
+  }
+  .slow-motion {
+    background: #A63D40;
+    .inner-circle {
+      background: #EEDBDC;
+    }
+  }
+  .slow-motion-right {
+    background: #EEDBDC;
+    .inner-circle {
+      background: #A63D40;
+    }
+  }
+  .sunglow-in-the-dark {
+    background: #FF6B6B;
+    .inner-circle {
+      background: #FFE4E4;
+    }
+  }
+  .sunglow-in-the-dark-right {
+    background: #FFE4E4;
+    .inner-circle {
+      background: #FF6B6B;
+    }
+  }
+  .palm-trees {
+    background: #E4572E;
+    .inner-circle {
+      background: #FAE0D9;
+    }
+  }
+  .palm-trees-right {
+    background: #FAE0D9;
+    .inner-circle {
+      background: #E4572E;
     }
   }
 }

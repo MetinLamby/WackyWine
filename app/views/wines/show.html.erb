@@ -2,7 +2,7 @@
   <div class="first-half-text">
     <div class="inner-circle">
       <div>
-        <h1><%= @wine.name %></h1>
+        <h1 class="wine-name-show"><%= @wine.name %></h1>
         <h4><%= @wine.winetype.name.capitalize %></h4>
       </div>
       <div class="wine-card-product-fruits fruits-show-page">
@@ -72,7 +72,7 @@
         </div>
       <%= form_tag orders_path do %>
       <%= hidden_field_tag 'wine_id', @wine.id %>
-      <%= submit_tag 'Purchase', class: 'purchase-btn' %>
+      <%= submit_tag 'Checkout', class: 'purchase-btn' %>
       <% end %>
     </div>
   </div>

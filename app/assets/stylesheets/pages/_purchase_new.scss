@@ -1,0 +1,54 @@
+.payment-summary {
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 80px;
+  color: black;
+  .payment-card {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: #FFE4E4;
+    padding: 100px;
+    .amount {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+    button {
+      background: #FF6B6B;
+      height: 30px;
+      width: 160px;
+      border-radius: 15px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+      span {
+        background: transparent !important;
+      }
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+
+  .order-card {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: #33CA7F;
+    padding: 100px;
+    .amount {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+}

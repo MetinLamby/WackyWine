@@ -1,6 +1,22 @@
-<h1>Order</h1>
-<ul>
-  <li>Status: <%= @order.state %></li>
-  <li>Item: <%= @order.wine_sku %></li>
-  <li>Amount: <%= humanized_money_with_symbol(@order.amount) %></li>
-<ul>
+<div class="payment-summary">
+
+  <div class="order-card">
+    <div style="margin-bottom: 50px;">
+      <h3>Your Wine</h3>
+      <hr>
+    </div>
+    <div>
+      <article>
+        <label class="amount">
+          <span>Product-sku: <%= @order.wine_sku %></span>
+          <span>Total: <%= humanized_money_with_symbol(@order.amount) %></span>
+        </label>
+      </article>
+    </div>
+    <%= link_to wines_path do %>
+    <div class="wacky-btn">
+      <p>Back to Shop</p>
+    </div>
+    <% end %>
+  </div>
+</div>

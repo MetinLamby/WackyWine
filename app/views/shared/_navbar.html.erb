@@ -7,7 +7,7 @@
     <% end %>
 
     <div class="search-btn">
-      <%= link_to "Search" %>
+      <%= link_to "About" %>
     </div>
   </div>
 
@@ -25,9 +25,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <% if user_signed_in? %>
-        <li class="nav-item">
-          <%= link_to "About", "#", class: "nav-link" %>
-        </li>
         <li class="nav-item">
           <%= link_to "Contact", "#", class: "nav-link" %>
         </li>

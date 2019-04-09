@@ -1,4 +1,63 @@
-.hololo {
-  margin-top: 300px;
-  background: red;
+.fifty-fifty {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 92vh;
+  .first-half-text {
+    height: 100%;
+    width: 50%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .inner-circle {
+      background: green;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      padding: 60px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+      .fruits-show-page {
+        margin-top: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .fruit-icon-and-name {
+          margin-right: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: column;
+        }
+        .fruiticon {
+          height: 50px !important;
+          width: 50px !important;
+          margin-right: 0 !important;
+          margin-bottom: 7px !important;
+        }
+      }
+    }
+  }
+  .second-half-product {
+    height: 100%;
+    width: 50%;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .inner-circle {
+      background: red;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
 }

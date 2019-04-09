@@ -7,12 +7,34 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border: none;
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+.purchase-btn {
+  background: #FF6B6B;
+  height: 40px;
+  width: 175px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
   p {
     margin-bottom: 0 !important;
   }
 }
 
 .wacky-btn:hover {
+  background: white;
+  color: #FF6B6B;
+  border: solid 3px #FF6B6B;
+}
+
+.purchase-btn:hover {
   background: white;
   color: #FF6B6B;
   border: solid 3px #FF6B6B;

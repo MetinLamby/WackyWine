@@ -20,7 +20,7 @@ puts 'Destroyed the whole database content'
 
 # Seeding all the wine types
 
-wine_types = ["red", "white"]
+wine_types = ["white", "red"]
 
 wine_types.each do |type|
   Winetype.create!(name: type)

@@ -39,12 +39,12 @@ end
 
 puts 'Creating Wines...'
 
-Wine.create!(name: "Palm Trees", sku:"palm-trees", price: 10, winetype_id: Winetype.all[0].id)
-Wine.create!(name: "Beach Views", sku:"beach-views", price: 10, winetype_id: Winetype.all[0].id)
-Wine.create!(name: "Sunglow In The Dark", sku:"sunglow-in-the-dark", price: 10, winetype_id: Winetype.all[0].id)
-Wine.create!(name: "Covered Eyes", sku:"covered-eyes", price: 10, winetype_id: Winetype.all[1].id)
-Wine.create!(name: "Flirt At Night", sku:"flirt-at-night", price: 10, winetype_id: Winetype.all[1].id)
-Wine.create!(name: "Slow Motion", sku:"slow-motion", price: 10, winetype_id: Winetype.all[1].id)
+Wine.create!(name: "Palm Trees", description: "Every sip",sku:"palm-trees", price: 10, winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Beach Views", description: "Every sip",sku:"beach-views", price: 10, winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Sunglow In The Dark", description: "Every sip",sku:"sunglow-in-the-dark", price: 10, winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Covered Eyes", description: "Every sip",sku:"covered-eyes", price: 10, winetype_id: Winetype.all[1].id)
+Wine.create!(name: "Flirt At Night", description: "Every sip",sku:"flirt-at-night", price: 10, winetype_id: Winetype.all[1].id)
+Wine.create!(name: "Slow Motion", description: "Every sip",sku:"slow-motion", price: 10, winetype_id: Winetype.all[1].id)
 
 puts 'Created 6 wines'
 

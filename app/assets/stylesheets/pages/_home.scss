@@ -9,7 +9,7 @@
   justify-content: center;
   flex-direction: column;
   h2 {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
 }
 
@@ -29,6 +29,13 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
+  margin-right: -30px;
+  transition: margin-right 150ms linear;
+}
+
+.new-margin {
+  margin-right: 40px;
+  transition: margin-right 150ms linear;
 }
 
 .bottle-array-circle:hover {
@@ -39,37 +46,31 @@
 
 #first-ball {
   background: #A63D40;
-  margin-right: -25px;
   z-index: 6;
 }
 
 #second-ball {
   background: #E4572E;
-  margin-right: -25px;
   z-index: 5;
 }
 
 #third-ball {
   background: #8D5A97;
-  margin-right: -25px;
   z-index: 4;
 }
 
 #fourth-ball {
   background: #FF6B6B;
-  margin-right: -25px;
   z-index: 3;
 }
 
 #fifth-ball {
   background: #F6BD60;
-  margin-right: -25px;
   z-index: 2;
 }
 
 #sixth-ball {
   background: #A40E4C;
-  margin-right: -25px;
   z-index: 1;
 }
 
@@ -87,7 +88,7 @@
 }
 
 .wackywine-what-left {
-  background: #E3F2FD;
+  background: #F6BD60;
   height: 100%;
   width: 100%;
   display: flex;
@@ -97,7 +98,7 @@
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    background: #F0A6CA;
+    background: #FDF3E2;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -109,7 +110,7 @@
 }
 
 .wackywine-what-right {
-  background: #F0A6CA;
+  background: #FDF3E2;
   height: 100%;
   width: 100%;
   display: flex;
@@ -119,7 +120,7 @@
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    background: #E3F2FD;
+    background: #F6BD60;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -134,16 +135,16 @@
   }
 }
 .wackywine-desc-second-right {
-  background: #FFAC81;
+  background: #FF6B6B;
   .background-circle-left {
-    background: #F7D4BC
+    background: #FFE4E4
   }
 }
 
 .wackywine-desc-second-left {
-  background: #F7D4BC;
+  background: #FFE4E4;
   .background-circle-right {
-    background: #FFAC81
+    background: #FF6B6B
   }
 }
 

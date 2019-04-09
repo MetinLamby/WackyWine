@@ -3,7 +3,7 @@
     <div class="container">
       <div class="small-banner-text">
         <h1>Tasty Wine made just for You</h1>
-        <h5>Qulatity wine for you to enjoy.</h5>
+        <h5>Quality wine for you to enjoy.</h5>
         <h5>Quality design for you to understand.</h5>
       </div>
     </div>
@@ -73,6 +73,9 @@
                 <p style="margin-right: 10px; color: grey"><%= fruit.name %></p>
               <% end %>
             </div>
+            <div>
+              <p><%= wine.description %></p>
+            </div>
           </div>
           <div class="wine-card-price">
             <p><%= humanized_money_with_symbol(wine.price) %></p>
@@ -137,6 +140,9 @@
               <% wine.fruits.each do |fruit|%>
                 <p style="margin-right: 10px; color: grey"><%= fruit.name %></p>
               <% end %>
+            </div>
+            <div>
+              <p><%= wine.description %></p>
             </div>
           </div>
           <div class="wine-card-price">

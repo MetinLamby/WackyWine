@@ -7,7 +7,13 @@ class PaymentsController < ApplicationController
   def create
     customer = Stripe::Customer.create(
       source: params[:stripeToken],
-      email:  params[:stripeEmail]
+      email:  params[:stripeEmail],
+      # name:  params[:stripeBillingName],
+      # addresslineone:  params[:stripeBillingAddressLine1],
+      # addresszip:  params[:stripeBillingAddressZip],
+      # addressstate:  params[:stripeBillingAddressState],
+      # addresscity:  params[:stripeBillingAddressCity],
+      # addresscountry:  params[:stripeBillingAddressCountry],
       )
 
     charge = Stripe::Charge.create(

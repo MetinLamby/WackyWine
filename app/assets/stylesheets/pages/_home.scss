@@ -29,12 +29,14 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
-  margin-right: -30px;
+  margin-right: -15px;
+  margin-left: -15px;
   transition: margin-right 150ms linear;
 }
 
 .new-margin {
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   transition: margin-right 150ms linear;
 }
 
@@ -105,6 +107,12 @@
     flex-direction: column;
     a {
       text-decoration: none;
+    }
+    h2 {
+      color: #030125;
+    }
+    p {
+      color: #030125;
     }
   }
 }

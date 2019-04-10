@@ -4,7 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  p {
+    color: white !important;
+  }
+  p:hover {
+    color: #FF6B6B !important;
+    text-decoration: none;
+  }
 }
 
 .wine-index-filter-left {
@@ -28,16 +35,6 @@
   p {
     margin-bottom: 0;
     margin-right: 15px;
-  }
-}
-
-.wine-index-filters {
-  a {
-    color: black !important;
-  }
-  a:hover {
-    color: #FF6B6B !important;
-    text-decoration: none;
   }
 }
 

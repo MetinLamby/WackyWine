@@ -15,7 +15,7 @@
 }
 
 .wine-card:hover {
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 25px #F8DBC8;
   transition: box-shadow 200ms linear;
   border: none;
 }
@@ -77,9 +77,13 @@
 }
 
 .wine-card-price:hover {
-  background: #FFD6D6;
+  background: #FFE1E1;
   transition: background 200ms linear;
   border-top: none;
+}
+
+.wine-card-price:hover .price{
+  color: black
 }
 
 .wine-card-info {
@@ -96,27 +100,27 @@
   }
 }
 
-.palm-trees {
+.sweet-secret {
   background: #E4572E
 }
 
-.beach-views {
+.exotic-foreplay {
   background: #F6BD60
 }
 
-.sunglow-in-the-dark {
+.fruity-fetish {
   background: #FF6B6B
 }
 
-.covered-eyes {
+.heavy-hickey {
   background: #A40E4C
 }
 
-.flirt-at-night {
+.flavorful-flirt {
   background: #8D5A97
 }
 
-.slow-motion {
+.rich-confession {
   background: #A63D40
 }
 

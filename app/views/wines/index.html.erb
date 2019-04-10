@@ -74,11 +74,11 @@
               <% end %>
             </div>
             <div>
-              <p><%= wine.description %></p>
+              <p>"<%= wine.description %>"</p>
             </div>
           </div>
           <div class="wine-card-price">
-            <p><%= humanized_money_with_symbol(wine.price) %></p>
+            <p class="price"><%= humanized_money_with_symbol(wine.price) %></p>
             <p id="red-wines" class="add-btn">Add</p>
           </div>
         </div>
@@ -142,11 +142,11 @@
               <% end %>
             </div>
             <div>
-              <p><%= wine.description %></p>
+              <p>"<%= wine.description %>"</p>
             </div>
           </div>
           <div class="wine-card-price">
-            <p><%= humanized_money_with_symbol(wine.price) %></p>
+            <p class="price"><%= humanized_money_with_symbol(wine.price) %></p>
             <p class="add-btn">Add</p>
           </div>
         </div>

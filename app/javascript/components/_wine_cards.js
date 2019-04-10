@@ -43,6 +43,21 @@ window.onload=function(){
   })
 }
 
+// adding the js for the navbar transparency
+
+// const navbar = document.getElementById("nav");
+
+// window.onscroll = function(){
+//   if (window.pageYOffset > 60) {
+//     navbar.style.background = "#000D19";
+//     // navbar.style.borderBottom: "solid 1px white";
+//   }
+//   else{
+//     navbar.style.background = "transparent";
+//     // navbar.style.borderBottom: "none";
+//   }
+// }
+
 
 
 

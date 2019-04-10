@@ -12,5 +12,6 @@ class WinesController < ApplicationController
 
   def show
     @wine = Wine.find(params[:id])
+    @fruits = Fruit.all
   end
 end

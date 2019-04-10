@@ -42,7 +42,7 @@ puts 'Creating Wines...'
 # Before: Plam Trees
 Wine.create!(name: "Sweet Secret", description: "You don't know until you try",sku:"sweet-secret", price: 10, winetype_id: Winetype.all[0].id)
 # Before: Beach views
-Wine.create!(name: "Exotic Foreplay", description: "The build up to a good night in a wine",sku:"exotic-foreplay", price: 10, winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Exotic Foreplay", description: "The build up to a good night",sku:"exotic-foreplay", price: 10, winetype_id: Winetype.all[0].id)
 # Before: Sunglow in the dark
 Wine.create!(name: "Fruity Fetish", description: "Craving for a fruity explosion?",sku:"fruity-fetish", price: 10, winetype_id: Winetype.all[0].id)
 # Before: slow motion

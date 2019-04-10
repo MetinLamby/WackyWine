@@ -16,9 +16,15 @@
 
 .wine-card:hover {
   box-shadow: 0 0 25px #F8DBC8;
-  transition: box-shadow 200ms linear;
+  transition: box-shadow 150ms linear;
   border: none;
+  transform: scale(1.02);
 }
+
+.wine-card:hover .wine-card-price{
+  padding: 0 10px;
+}
+
 
 .wine-card-product-image {
   display: flex;
@@ -76,7 +82,7 @@
   }
 }
 
-.wine-card-price:hover {
+/*.wine-card-price:hover {
   background: #FFE1E1;
   transition: background 200ms linear;
   border-top: none;
@@ -84,7 +90,7 @@
 
 .wine-card-price:hover .price{
   color: black
-}
+}*/
 
 .wine-card-info {
   display: flex;

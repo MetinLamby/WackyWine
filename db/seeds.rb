@@ -39,12 +39,18 @@ end
 
 puts 'Creating Wines...'
 
-Wine.create!(name: "Palm Trees", description: "Every sip",sku:"palm-trees", price: 10, winetype_id: Winetype.all[0].id)
-Wine.create!(name: "Beach Views", description: "Every sip",sku:"beach-views", price: 10, winetype_id: Winetype.all[0].id)
-Wine.create!(name: "Sunglow In The Dark", description: "Every sip",sku:"sunglow-in-the-dark", price: 10, winetype_id: Winetype.all[0].id)
-Wine.create!(name: "Covered Eyes", description: "Every sip",sku:"covered-eyes", price: 10, winetype_id: Winetype.all[1].id)
-Wine.create!(name: "Flirt At Night", description: "Every sip",sku:"flirt-at-night", price: 10, winetype_id: Winetype.all[1].id)
-Wine.create!(name: "Slow Motion", description: "Every sip",sku:"slow-motion", price: 10, winetype_id: Winetype.all[1].id)
+# Before: Plam Trees
+Wine.create!(name: "Sweet Secret", description: "Every sip",sku:"sweet-secret", price: 10, winetype_id: Winetype.all[0].id)
+# Before: Beach views
+Wine.create!(name: "Exotic Foreplay", description: "Every sip",sku:"exotic-foreplay", price: 10, winetype_id: Winetype.all[0].id)
+# Before: Sunglow in the dark
+Wine.create!(name: "Fruity Fetish", description: "Every sip",sku:"fruity-fetish", price: 10, winetype_id: Winetype.all[0].id)
+# Before: slow motion
+Wine.create!(name: "Rich Confession", description: "Every sip",sku:"rich-confession", price: 10, winetype_id: Winetype.all[1].id)
+# Before: Flirt at night
+Wine.create!(name: "Flavorful Flirt", description: "Every sip",sku:"flavorful-flirt", price: 10, winetype_id: Winetype.all[1].id)
+# Before: Covered eyes
+Wine.create!(name: "Heavy Hickey", description: "Every sip",sku:"heavy-hickey", price: 10, winetype_id: Winetype.all[1].id)
 
 puts 'Created 6 wines'
 
@@ -53,7 +59,7 @@ puts 'Created 6 wines'
 
 puts 'Creating connections between fruits and wines...'
 
-palm_trees = Wine.find_by(name:"Palm Trees")
+palm_trees = Wine.find_by(name:"Sweet Secret")
 selected_fruits = Fruit.where({name:["Peach", "Pineapple"]})
 selected_fruits.each do |fruit|
   winefruit = WineFruit.new
@@ -63,7 +69,7 @@ selected_fruits.each do |fruit|
 end
 
 
-beach_views = Wine.find_by(name:"Beach Views")
+beach_views = Wine.find_by(name:"Exotic Foreplay")
 selected_fruits = Fruit.where({name:["Mango", "Pineapple", "Passion Fruit"]})
 selected_fruits.each do |fruit|
   winefruit = WineFruit.new
@@ -73,7 +79,7 @@ selected_fruits.each do |fruit|
 end
 
 
-sunglow_in_the_dark = Wine.find_by(name:"Sunglow In The Dark")
+sunglow_in_the_dark = Wine.find_by(name:"Fruity Fetish")
 selected_fruits = Fruit.where({name:["Apple", "Banana", "Apricot", "Pear"]})
 selected_fruits.each do |fruit|
   winefruit = WineFruit.new
@@ -83,7 +89,7 @@ selected_fruits.each do |fruit|
 end
 
 
-covered_eyes = Wine.find_by(name:"Covered Eyes")
+covered_eyes = Wine.find_by(name:"Heavy Hickey")
 selected_fruits = Fruit.where({name:["Blackberry", "Cherry"]})
 selected_fruits.each do |fruit|
   winefruit = WineFruit.new
@@ -93,7 +99,7 @@ selected_fruits.each do |fruit|
 end
 
 
-flirt_at_night = Wine.find_by(name:"Flirt At Night")
+flirt_at_night = Wine.find_by(name:"Flavorful Flirt")
 selected_fruits = Fruit.where({name:["Plum", "Red Berry"]})
 selected_fruits.each do |fruit|
   winefruit = WineFruit.new
@@ -103,7 +109,7 @@ selected_fruits.each do |fruit|
 end
 
 
-slow_motion = Wine.find_by(name:"Slow Motion")
+slow_motion = Wine.find_by(name:"Rich Confession")
 selected_fruits = Fruit.where({name:["Plum", "Cherry"]})
 selected_fruits.each do |fruit|
   winefruit = WineFruit.new

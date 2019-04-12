@@ -45,18 +45,18 @@ window.onload=function(){
 
 // adding the js for the navbar transparency
 
-// const navbar = document.getElementById("nav");
+const downarrow = document.getElementById("downarrow");
 
-// window.onscroll = function(){
-//   if (window.pageYOffset > 60) {
-//     navbar.style.background = "#000D19";
-//     // navbar.style.borderBottom: "solid 1px white";
-//   }
-//   else{
-//     navbar.style.background = "transparent";
-//     // navbar.style.borderBottom: "none";
-//   }
-// }
+window.onscroll = function(){
+  if (window.pageYOffset > 100) {
+    downarrow.style.color = "transparent";
+    // navbar.style.borderBottom: "solid 1px white";
+  }
+  else{
+    downarrow.style.color = "white";
+    // navbar.style.borderBottom: "none";
+  }
+}
 
 
 

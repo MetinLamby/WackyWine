@@ -13,5 +13,8 @@ class WinesController < ApplicationController
   def show
     @wine = Wine.find(params[:id])
     @fruits = Fruit.all
+    @allfruits = (@wine.fruits + @fruits)
+    @allfruitstwo = @allfruits.select{ |e| @allfruits.count(e) > 1 }.uniq
+    @allfruitsthree = @allfruits.select{ |e| @allfruits.count(e) == 1 }.uniq
   end
 end

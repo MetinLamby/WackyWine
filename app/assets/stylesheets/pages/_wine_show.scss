@@ -22,8 +22,8 @@
       align-items: flex-start;
       justify-content: space-around;
       flex-direction: column;
-      h1 {
-        color: black;
+      h2 {
+        color: #000D19;
       }
       .fruits-show-page {
         margin-top: 0 !important;
@@ -139,4 +139,99 @@
       background: #FF443A;
     }
   }
+}
+
+.arrow-down {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  i {
+    font-size: 30px;
+    color: white;
+    animation-name: updown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: color 200ms linear;
+  }
+  @keyframes updown {
+   0% {margin-bottom: 0px;}
+   50% {margin-bottom: 7px;}
+   100% {margin-bottom: 0px;}
+}
+}
+
+.allfruits {
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.fruitslist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.fruiticontwo {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+
+.card-product {
+  border: 1px solid white;
+  overflow: hidden;
+  height: 120px;
+  width: 825px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  .fruit-img {
+    height: 100%;
+    width: 120px;
+    background: #000D19;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.card-product:hover {
+  box-shadow: 0 0 25px #F8DBC8;
+  transition: box-shadow 150ms linear;
+  border: none;
+  transform: scale(1.02);
+
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  color: black;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
 }

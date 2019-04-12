@@ -6,70 +6,70 @@
         <h6 style="color: grey"><%= @wine.winetype.name.capitalize %> Wine</h6>
       </div>
       <div class="wine-card-product-fruits fruits-show-page">
-            <% @wine.fruits.each do |fruit| %>
-            <% if fruit.name == "Peach" %>
-            <div class="fruit-icon-and-name">
-              <%= image_tag('peachicon.png', class:"fruiticon") %>
-              <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Pineapple" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('pineappleicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Plum" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('plumicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Cherry" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('cherryicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Apple" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('appleicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Banana" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('bananaicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Apricot" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('apricoticon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Pear" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('pearicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Mango" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('mangoicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Passion Fruit" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('passion-fruiticon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Blackberry" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('blackberryicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% elsif fruit.name == "Red Berry" %>
-            <div class="fruit-icon-and-name">
-            <%= image_tag('strawberryicon.png', class:"fruiticon") %>
-            <%= fruit.name %>
-            </div>
-            <% end %>
-            <% end %>
+        <% @wine.fruits.each do |fruit| %>
+        <% if fruit.name == "Peach" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('peachicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
         </div>
+        <% elsif fruit.name == "Pineapple" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('pineappleicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Plum" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('plumicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Cherry" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('cherryicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Apple" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('appleicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Banana" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('bananaicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Apricot" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('apricoticon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Pear" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('pearicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Mango" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('mangoicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Passion Fruit" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('passion-fruiticon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Blackberry" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('blackberryicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% elsif fruit.name == "Red Berry" %>
+        <div class="fruit-icon-and-name">
+          <%= image_tag('strawberryicon.png', class:"fruiticon") %>
+          <%= fruit.name %>
+        </div>
+        <% end %>
+        <% end %>
+      </div>
       <%= form_tag orders_path do %>
       <%= hidden_field_tag 'wine_id', @wine.id %>
       <%= submit_tag 'Pay', class: 'purchase-btn' %>
@@ -89,8 +89,10 @@
 
 
 
-<div style="margin-top: 50px;margin-bottom: 50px" class="container">
-  <div class="wine-desc">
+<div class="container description-text">
+
+  <div class="wine-desc-text">
+    <h2>Description</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolores eius dolor distinctio deleniti unde error omnis. Architecto consectetur voluptates accusantium nihil praesentium voluptatem, blanditiis laboriosam consequatur obcaecati voluptatum neque unde quos perspiciatis quo, totam sit quas optio doloremque? Asperiores sequi quod, exercitationem reprehenderit deleniti molestias nemo voluptate maiores temporibus.</p>
   </div>
 </div>
@@ -158,47 +160,54 @@
     </div>
     <% elsif fruit.name == "Pear" %>
     <div class="card-product">
-       <div class="fruit-img"><%= image_tag('pearicon.png', class:"fruiticontwo") %></div>
-      <div class="card-product-infos">
-        <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
+     <div class="fruit-img"><%= image_tag('pearicon.png', class:"fruiticontwo") %></div>
+     <div class="card-product-infos">
+      <h2><%= fruit.name %></h2>
+      <p>Product description with <strong>relevant info</strong> only.</p>
     </div>
-    <% elsif fruit.name == "Mango" %>
-    <div class="card-product">
-       <div class="fruit-img"><%= image_tag('mangoicon.png', class:"fruiticontwo") %></div>
-      <div class="card-product-infos">
-        <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
-    </div>
-    <% elsif fruit.name == "Passion Fruit" %>
-    <div class="card-product">
-       <div class="fruit-img"><%= image_tag('passion-fruiticon.png', class:"fruiticontwo") %></div>
-      <div class="card-product-infos">
-        <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
-    </div>
-    <% elsif fruit.name == "Blackberry" %>
-    <div class="card-product">
-       <div class="fruit-img"><%= image_tag('blackberryicon.png', class:"fruiticontwo") %></div>
-      <div class="card-product-infos">
-        <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
-    </div>
-    <% elsif fruit.name == "Red Berry" %>
-    <div class="card-product">
-      <div class="fruit-img"><%= image_tag('strawberryicon.png', class:"fruiticontwo") %></div>
-      <div class="card-product-infos">
-        <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
-    </div>
-    <% end %>
-    <% end %>
   </div>
+  <% elsif fruit.name == "Mango" %>
+  <div class="card-product">
+   <div class="fruit-img"><%= image_tag('mangoicon.png', class:"fruiticontwo") %></div>
+   <div class="card-product-infos">
+    <h2><%= fruit.name %></h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>
+<% elsif fruit.name == "Passion Fruit" %>
+<div class="card-product">
+ <div class="fruit-img"><%= image_tag('passion-fruiticon.png', class:"fruiticontwo") %></div>
+ <div class="card-product-infos">
+  <h2><%= fruit.name %></h2>
+  <p>Product description with <strong>relevant info</strong> only.</p>
+</div>
+</div>
+<% elsif fruit.name == "Blackberry" %>
+<div class="card-product">
+ <div class="fruit-img"><%= image_tag('blackberryicon.png', class:"fruiticontwo") %></div>
+ <div class="card-product-infos">
+  <h2><%= fruit.name %></h2>
+  <p>Product description with <strong>relevant info</strong> only.</p>
+</div>
+</div>
+<% elsif fruit.name == "Red Berry" %>
+<div class="card-product">
+  <div class="fruit-img"><%= image_tag('strawberryicon.png', class:"fruiticontwo") %></div>
+  <div class="card-product-infos">
+    <h2><%= fruit.name %></h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>
+<% end %>
+<% end %>
+</div>
+</div>
+
+<div class="pay-button">
+  <%= form_tag orders_path do %>
+  <%= hidden_field_tag 'wine_id', @wine.id %>
+  <%= submit_tag 'Pay', class: 'purchase-btn' %>
+  <% end %>
 </div>
 
 

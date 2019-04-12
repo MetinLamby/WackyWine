@@ -1,7 +1,14 @@
 // Specific CSS for your home-page
 
+.products {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .products-array {
-  margin: 15vh 0px;
+
   height: 35vh;
   width: 100%;
   display: flex;

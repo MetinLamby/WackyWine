@@ -162,6 +162,21 @@
 }
 }
 
+.description-text {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+
+  .wine-desc-text {
+    width: 825px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .allfruits {
   h2 {
     margin-bottom: 20px;
@@ -177,8 +192,8 @@
 }
 
 .fruiticontwo {
-  height: 60px !important;
-  width: 60px !important;
+  height: 65px !important;
+  width: 65px !important;
 }
 
 
@@ -234,4 +249,13 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.pay-button {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }

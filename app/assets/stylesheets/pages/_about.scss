@@ -1,0 +1,78 @@
+.team {
+  height: 100vh;
+  .meet-the-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .meet-the-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    .team-desc {
+      height: 300px;
+      width: 300px;
+      background: #FFF1F1;
+      margin-right: -50px;
+      z-index: 2;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px;
+      p {
+        color: black;
+      }
+    }
+    .team-pic {
+      height: 500px;
+      width: 700px;
+      background: grey;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.fun-facts {
+  height: 150vh;
+  background: #272932;
+  .fun-facts-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    h3 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    }
+  }
+  .grid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+    width: 450px;
+  .fact-square {
+    border-radius: 10px;
+    margin-bottom: 70px;
+    height: 410px;
+    width: 100%;
+    background: #FFF1F1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      color: black;
+    }
+  }
+  }
+}
+

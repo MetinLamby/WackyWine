@@ -1,0 +1,53 @@
+.address-desc {
+  height: 250px;
+  width: 250px;
+  background: #FFF1F1;
+  margin-right: -50px;
+  z-index: 2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+  }
+  i {
+    font-size: 40px;
+  }
+}
+
+.phone-desc {
+  margin-right: 0px;
+  margin-left: -50px;
+}
+
+#location-pic {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), image_url("banner.jpg");
+  background-size: cover;
+  p {
+    color: transparent;
+  }
+}
+
+#phone-pic {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), image_url("banner.jpg");
+  background-size: cover;
+  p {
+    color: transparent;
+  }
+}
+
+#email-pic {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), image_url("banner.jpg");
+  background-size: cover;
+  p {
+    color: transparent;
+  }
+}

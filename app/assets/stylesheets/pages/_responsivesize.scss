@@ -6,16 +6,20 @@
 
 /*Small mac*/
 @media only screen and (min-width: 1030px) {
-  .products-array {
-
+  .new-margin {
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: margin-right 150ms linear;
   }
 }
 
 
 /*Big mac*/
 @media only screen and (min-width: 1600px) {
-  .products-array {
-
+  .new-margin {
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: margin-right 150ms linear;
   }
 
 }

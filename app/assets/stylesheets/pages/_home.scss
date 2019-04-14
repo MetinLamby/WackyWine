@@ -1,5 +1,11 @@
 // Specific CSS for your home-page
 
+.logo-banner {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
 .products {
   height: 80vh;
   display: flex;
@@ -180,9 +186,12 @@
   height: 80%;
   width: 100%;
   .instagram-img {
-    background: grey;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), image_url("team.jpg");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
 }
+
+

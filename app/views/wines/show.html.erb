@@ -102,14 +102,15 @@
 
 <div class="container fruitslist">
   <div class="wine-desc allfruits">
-    <h2>Tastes</h2>
+    <h2>Aromas</h2>
     <% @allfruitstwo.each do |fruit| %>
     <% if fruit.name == "Peach" %>
     <div class="card-product">
       <div class="fruit-img"><%= image_tag('peachicon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p>A fruit that will remind you of summer due to its <strong>rich, fruity aromatic essences.</strong></p>
+
       </div>
     </div>
     <% elsif fruit.name == "Pineapple" %>
@@ -117,7 +118,7 @@
       <div class="fruit-img"><%= image_tag('pineappleicon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p><strong>Fresh and fruity</strong>yet sweet and full-flavoured at the same time.</p>
       </div>
     </div>
     <% elsif fruit.name == "Plum" %>
@@ -125,7 +126,7 @@
       <div class="fruit-img"><%= image_tag('plumicon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p>Rich, seductive and sweet but with an <strong>acidic spark and an astringent bite.</strong></p>
       </div>
     </div>
     <% elsif fruit.name == "Cherry" %>
@@ -133,7 +134,7 @@
       <div class="fruit-img"><%= image_tag('cherryicon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p>A sommer fruit with a unique <strong>sour-sweet flavor</strong> with a tart touch.</p>
       </div>
     </div>
     <% elsif fruit.name == "Apple" %>
@@ -141,7 +142,7 @@
       <div class="fruit-img"><%= image_tag('appleicon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p><strong>Sour, bitter and sweet</strong>. Basically a fruit with an explosion of aromas.</p>
       </div>
     </div>
     <% elsif fruit.name == "Banana" %>
@@ -149,7 +150,7 @@
       <div class="fruit-img"><%= image_tag('bananaicon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p>Pleasantly chalky with a lasting, tropical, <strong>creamy flavor.</strong></p>
       </div>
     </div>
     <% elsif fruit.name == "Apricot" %>
@@ -157,7 +158,7 @@
       <div class="fruit-img"><%= image_tag('apricoticon.png', class:"fruiticontwo") %></div>
       <div class="card-product-infos">
         <h2><%= fruit.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
+        <p>Sweet and meaty, with just enough <strong>tartness to balance them out.</strong></p>
       </div>
     </div>
     <% elsif fruit.name == "Pear" %>
@@ -165,7 +166,7 @@
      <div class="fruit-img"><%= image_tag('pearicon.png', class:"fruiticontwo") %></div>
      <div class="card-product-infos">
       <h2><%= fruit.name %></h2>
-      <p>Product description with <strong>relevant info</strong> only.</p>
+      <p>Juicy, sweet flavor with <strong>floral undertones</strong> and a characteristic perfume.</p>
     </div>
   </div>
   <% elsif fruit.name == "Mango" %>
@@ -173,7 +174,7 @@
    <div class="fruit-img"><%= image_tag('mangoicon.png', class:"fruiticontwo") %></div>
    <div class="card-product-infos">
     <h2><%= fruit.name %></h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
+    <p>Sweet, juicy and deliciously tasty, the <strong>ultimate tropical fruit.</strong></p>
   </div>
 </div>
 <% elsif fruit.name == "Passion Fruit" %>
@@ -181,7 +182,7 @@
  <div class="fruit-img"><%= image_tag('passion-fruiticon.png', class:"fruiticontwo") %></div>
  <div class="card-product-infos">
   <h2><%= fruit.name %></h2>
-  <p>Product description with <strong>relevant info</strong> only.</p>
+  <p><strong>Exotic, fruity and tart</strong> with a strong and characteristic perfume.</p>
 </div>
 </div>
 <% elsif fruit.name == "Blackberry" %>
@@ -189,7 +190,7 @@
  <div class="fruit-img"><%= image_tag('blackberryicon.png', class:"fruiticontwo") %></div>
  <div class="card-product-infos">
   <h2><%= fruit.name %></h2>
-  <p>Product description with <strong>relevant info</strong> only.</p>
+  <p>Very <strong>tart</strong>, with a delicious sweet and sour touch.</p>
 </div>
 </div>
 <% elsif fruit.name == "Red Berry" %>
@@ -197,7 +198,7 @@
   <div class="fruit-img"><%= image_tag('strawberryicon.png', class:"fruiticontwo") %></div>
   <div class="card-product-infos">
     <h2><%= fruit.name %></h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
+    <p>Sweet and sour aromas that reminds you of the <strong>essence of spring.</strong></p>
   </div>
 </div>
 <% end %>

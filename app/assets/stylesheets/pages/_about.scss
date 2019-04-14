@@ -27,6 +27,9 @@
       p {
         color: black;
       }
+      h4 {
+        color: black;
+      }
     }
     .team-pic {
       height: 500px;
@@ -70,11 +73,46 @@
     height: 410px;
     width: 100%;
     background: #FFF1F1;
-    display: flex;
+/*    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;*/
     p {
       color: black;
+    }
+    .fact-text {
+/*      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;*/
+      .fact-header {
+        height: 130px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .fact-icon {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 70px;
+      }
+      .fact-paragraph {
+        height: 170px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      h5 {
+        color: black;
+      }
+      h3 {
+        color: black;
+      }
     }
   }
   }

@@ -70,10 +70,11 @@
         <% end %>
         <% end %>
       </div>
-      <%= form_tag orders_path do %>
-      <%= hidden_field_tag 'wine_id', @wine.id %>
-      <%= submit_tag 'Pay', class: 'purchase-btn' %>
-      <% end %>
+     <!--  <%#= form_tag orders_path do %>
+      <%#= hidden_field_tag 'wine_id', @wine.id %>
+      <%#= submit_tag 'Pay', class: 'purchase-btn' %>
+      <%# end %> -->
+      <%= render "order_items/form", wine: @wine, order_item: @order_item %>
     </div>
   </div>
   <div class="second-half-product">

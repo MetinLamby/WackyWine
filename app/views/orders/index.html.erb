@@ -1,0 +1,148 @@
+<% if !current_user %>
+
+<div class="order-overview">
+  <div class="order-products">
+    <div class="order-products-text">
+      <h2>Wines</h2>
+      <hr>
+      <h4>You have no items in your box.</h4>
+      <%= link_to wines_path do %>
+      <div class="wacky-btn">
+        <p>Shop</p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="order-price">
+    <div class="price-details">
+      <h2>Your Order</h2>
+      <hr>
+      <h3>No orders yet.</h3>
+    </div>
+  </div>
+</div>
+
+<% elsif @order_items.nil? %>
+
+<div class="order-overview">
+  <div class="order-products">
+    <div class="order-products-text">
+      <h2>Wines</h2>
+      <hr>
+      <h4>Your Box is empty. Start Shopping!</h4>
+      <%= link_to wines_path do %>
+      <div class="wacky-btn">
+        <p>Back To Shop</p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="order-price">
+    <div class="price-details">
+      <h2>Your Order</h2>
+      <hr>
+      <h3>No orders yet.</h3>
+    </div>
+  </div>
+</div>
+
+<% elsif @order_items.empty? %>
+
+<div class="order-overview">
+  <div class="order-products">
+    <div class="order-products-text">
+      <h2>Wines</h2>
+      <hr>
+      <h4>Your Box is empty. Start Shopping!</h4>
+      <%= link_to wines_path do %>
+      <div class="wacky-btn">
+        <p>Back To Shop</p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="order-price">
+    <div class="price-details">
+      <h2>Your Order</h2>
+      <hr>
+      <h3>No orders yet.</h3>
+    </div>
+  </div>
+</div>
+
+
+<% else %>
+
+<div class="order-overview">
+  <div class="order-products">
+    <div class="order-products-text">
+      <h2>Wines</h2>
+      <hr>
+      <div class="product-list">
+        <% @order_items.each do |item| %>
+        <div id="product-each" class="card-product">
+          <div class="fruit-img"><%= image_tag('dose.png', class:"fruiticontwo") %></div>
+          <div class="card-product-infos">
+            <h2><%= item.wine.name %></h2>
+            <p><%= item.wine.description %></p>
+            <p><%= humanized_money_with_symbol(item.wine.price) %></p>
+          </div>
+          <div class="delete-cross">
+            <%= link_to order_item_path(item), method: :delete  do %>
+              <i class="fas fa-times"></i>
+            <% end %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <%= link_to wines_path do %>
+      <div class="wacky-btn">
+        <p>Back To Shop</p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="order-price">
+    <div class="price-details">
+      <h2>Your Order</h2>
+      <hr>
+      <div class="details-text">
+        <div class="details-text-inner">
+          <p>Subtotal</p>
+          <p><%= humanized_money_with_symbol(@order.amount) %></p>
+        </div>
+        <div class="details-text-inner">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Total</p>
+          <p>€<%= @wine_prices/100 %></p>
+        </div>
+      </div>
+      <%= link_to new_order_payment_path(@order) do %>
+      <div class="wacky-btn">
+        <p>Checkout</p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

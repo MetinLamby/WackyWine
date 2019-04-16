@@ -8,23 +8,25 @@ class PaymentsController < ApplicationController
     customer = Stripe::Customer.create(
       source: params[:stripeToken],
       email:  params[:stripeEmail],
-      # name:  params[:stripeBillingName],
+      # billing_name:  params[:stripeBillingName],
       # addresslineone:  params[:stripeBillingAddressLine1],
       # addresszip:  params[:stripeBillingAddressZip],
       # addressstate:  params[:stripeBillingAddressState],
       # addresscity:  params[:stripeBillingAddressCity],
-      # addresscountry:  params[:stripeBillingAddressCountry],
+      # billing_address_country:  params[:stripeBillingAddressCountry],
       )
 
     charge = Stripe::Charge.create(
     customer:     customer.id,   # You should store this customer id and re-use it.
     amount:       @order.amount_cents,
-    description:  "Payment for teddy #{@order.wine_sku} for order #{@order.id}",
+    description:  "Payment for wine #{@order.wine_sku} for order #{@order.id}",
     currency:     @order.amount.currency
     )
 
     @order.update(payment: charge.to_json, state: 'paid')
-    redirect_to order_path(@order)
+    # redirect_to order_path(@order)
+    redirect_to wines_path
+    flash[:notice] = "We received your order"
 
   rescue Stripe::CardError => e
     flash[:alert] = e.message

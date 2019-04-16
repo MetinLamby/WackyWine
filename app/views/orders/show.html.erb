@@ -1,4 +1,4 @@
-<div class="payment-summary">
+<!-- <div class="payment-summary">
   <div class="order-card">
     <div style="margin-bottom: 50px;">
       <h3>Your Wine</h3>
@@ -7,15 +7,23 @@
     <div>
       <article>
         <label class="amount">
-          <span>Product-sku: <%= @order.wine_sku %></span>
-          <span>Total: <%= humanized_money_with_symbol(@order.amount) %></span>
+          <span>Product-sku: <%#= @order.wine_sku %></span>
+          <span>Total: <%#= humanized_money_with_symbol(@order.amount) %></span>
         </label>
       </article>
     </div>
-    <%= link_to wines_path do %>
+    <%#= link_to wines_path do %>
     <div class="wacky-btn">
       <p>Back to Shop</p>
     </div>
-    <% end %>
+    <%# end %>
   </div>
-</div>
+</div> -->
+
+<h1 style="margin-top: 100px;">
+  This is the Order show page
+
+  <% @order_items.each do |item| %>
+  <%= item.wine %>
+  <% end %>
+</h1>

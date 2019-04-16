@@ -11,6 +11,7 @@ class WinesController < ApplicationController
   end
 
   def show
+    @order_item = OrderItem.new
     @wine = Wine.find(params[:id])
     @fruits = Fruit.all
     @allfruits = (@wine.fruits + @fruits)

@@ -45,6 +45,10 @@
   margin-right: -15px;
   margin-left: -15px;
   transition: margin-right 150ms linear;
+  position: relative;
+  .ball-text {
+    color: transparent;
+  }
 }
 
 .new-margin {
@@ -194,4 +198,13 @@
   }
 }
 
+.ball-text {
+  position: absolute;
+}
+
+
+
+.bottle-array-circle:hover .ball-text {
+  color: white;
+}
 

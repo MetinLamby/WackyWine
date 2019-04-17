@@ -218,11 +218,10 @@
 }
 
 .card-product:hover {
-  box-shadow: 0 0 25px #F8DBC8;
-  transition: box-shadow 150ms linear;
-  border: none;
+/*  box-shadow: 0 0 25px #F8DBC8;*/
+  /*border: none;*/
   transform: scale(1.02);
-
+  transition: transform 150ms linear;
 }
 
 .card-product img {

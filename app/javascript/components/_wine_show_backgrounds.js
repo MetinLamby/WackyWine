@@ -3,6 +3,8 @@ const addhere = document.querySelectorAll(".first-half-text")
 const addhereright = document.querySelectorAll(".second-half-product")
 const addheredescription = document.querySelectorAll(".description-show")
 
+
+
 if (leftside[0].innerHTML === "Exotic Foreplay") {
   addhere[0].classList.add("exotic-foreplay");
   addhereright[0].classList.add("exotic-foreplay-right");

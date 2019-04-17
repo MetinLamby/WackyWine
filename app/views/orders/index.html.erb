@@ -5,19 +5,40 @@
     <div class="order-products-text">
       <h2>Wines</h2>
       <hr>
-      <h4>You have no items in your box.</h4>
-      <%= link_to wines_path do %>
-      <div class="wacky-btn">
-        <p>Shop</p>
+      <div class="empty-box-flex">
+        <div class="empty-box">
+          <h4><i class="fas fa-box-open"></i></h4>
+          <h4>Your Box is empty. Start Shopping!</h4>
+        <%= link_to wines_path do %>
+        <div class="wacky-btn">
+          <p>Back To Shop</p>
+        </div>
+        <% end %>
+        </div>
       </div>
-      <% end %>
     </div>
   </div>
   <div class="order-price">
     <div class="price-details">
       <h2>Your Order</h2>
       <hr>
-      <h3>No orders yet.</h3>
+      <div class="details-text">
+        <div class="details-text-inner">
+          <p>Subtotal</p>
+          <p>€0</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Total</p>
+          <p>-</p>
+        </div>
+      </div>
+      <div class="wacky-btn-inactive">
+        <p>Checkout</p>
+      </div>
     </div>
   </div>
 </div>
@@ -29,19 +50,40 @@
     <div class="order-products-text">
       <h2>Wines</h2>
       <hr>
-      <h4>Your Box is empty. Start Shopping!</h4>
-      <%= link_to wines_path do %>
-      <div class="wacky-btn">
-        <p>Back To Shop</p>
+      <div class="empty-box-flex">
+        <div class="empty-box">
+          <h4><i class="fas fa-box-open"></i></h4>
+          <h4>Your Box is empty. Start Shopping!</h4>
+        <%= link_to wines_path do %>
+        <div class="wacky-btn">
+          <p>Back To Shop</p>
+        </div>
+        <% end %>
+        </div>
       </div>
-      <% end %>
     </div>
   </div>
   <div class="order-price">
     <div class="price-details">
       <h2>Your Order</h2>
       <hr>
-      <h3>No orders yet.</h3>
+      <div class="details-text">
+        <div class="details-text-inner">
+          <p>Subtotal</p>
+          <p>€0</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Total</p>
+          <p>-</p>
+        </div>
+      </div>
+      <div class="wacky-btn-inactive">
+        <p>Checkout</p>
+      </div>
     </div>
   </div>
 </div>
@@ -53,19 +95,40 @@
     <div class="order-products-text">
       <h2>Wines</h2>
       <hr>
-      <h4>Your Box is empty. Start Shopping!</h4>
-      <%= link_to wines_path do %>
-      <div class="wacky-btn">
-        <p>Back To Shop</p>
+      <div class="empty-box-flex">
+        <div class="empty-box">
+          <h4><i class="fas fa-box-open"></i></h4>
+          <h4>Your Box is empty. Start Shopping!</h4>
+        <%= link_to wines_path do %>
+        <div class="wacky-btn">
+          <p>Back To Shop</p>
+        </div>
+        <% end %>
+        </div>
       </div>
-      <% end %>
     </div>
   </div>
   <div class="order-price">
     <div class="price-details">
       <h2>Your Order</h2>
       <hr>
-      <h3>No orders yet.</h3>
+      <div class="details-text">
+        <div class="details-text-inner">
+          <p>Subtotal</p>
+          <p>€0</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <div class="details-text-inner">
+          <p>Total</p>
+          <p>-</p>
+        </div>
+      </div>
+      <div class="wacky-btn-inactive">
+        <p>Checkout</p>
+      </div>
     </div>
   </div>
 </div>
@@ -80,10 +143,10 @@
       <hr>
       <div class="product-list">
         <% @order_items.each do |item| %>
-        <div id="product-each" class="card-product">
+        <div id="product-each" class="card-product card-product-orders">
           <div class="fruit-img"><%= image_tag('dose.png', class:"fruiticontwo") %></div>
           <div class="card-product-infos">
-            <h2><%= item.wine.name %></h2>
+            <h2 class="wine-name-cart"><%= item.wine.name %></h2>
             <p><%= item.wine.description %></p>
             <p><%= humanized_money_with_symbol(item.wine.price) %></p>
           </div>
@@ -134,7 +197,45 @@
 
 
 
+<script type="text/javascript">
 
+
+  // this is the js for the order index page
+
+const product = document.querySelectorAll(".card-product-orders")
+
+function checkconditionfour(x){
+  if (x.querySelectorAll(".card-product-infos")[0].querySelectorAll(".wine-name-cart")[0].innerHTML === "Sweet Secret") {
+    x.querySelectorAll(".fruit-img")[0].classList.add("sweet-secret-background");
+  }
+
+  else if (x.querySelectorAll(".card-product-infos")[0].querySelectorAll(".wine-name-cart")[0].innerHTML === "Exotic Foreplay") {
+    x.querySelectorAll(".fruit-img")[0].classList.add("exotic-foreplay-background");
+  }
+
+  else if (x.querySelectorAll(".card-product-infos")[0].querySelectorAll(".wine-name-cart")[0].innerHTML === "Fruity Fetish") {
+    x.querySelectorAll(".fruit-img")[0].classList.add("fruity-fetish-background");
+  }
+
+  else if (x.querySelectorAll(".card-product-infos")[0].querySelectorAll(".wine-name-cart")[0].innerHTML === "Heavy Hickey") {
+    x.querySelectorAll(".fruit-img")[0].classList.add("heavy-hickey-background");
+  }
+
+  else if (x.querySelectorAll(".card-product-infos")[0].querySelectorAll(".wine-name-cart")[0].innerHTML === "Flavorful Flirt") {
+    x.querySelectorAll(".fruit-img")[0].classList.add("flavorful-flirt-background");
+  }
+
+  else if (x.querySelectorAll(".card-product-infos")[0].querySelectorAll(".wine-name-cart")[0].innerHTML === "Rich Confession") {
+    x.querySelectorAll(".fruit-img")[0].classList.add("rich-confession-background");
+  }
+}
+
+product.forEach(x => checkconditionfour(x))
+
+
+
+
+</script>
 
 
 

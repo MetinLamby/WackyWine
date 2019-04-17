@@ -202,9 +202,22 @@
   position: absolute;
 }
 
-
-
 .bottle-array-circle:hover .ball-text {
   color: white;
+}
+
+.alert {
+  background: #FF6B6B !important;
+  border: none !important;
+  #text {
+    color: white !important;
+  }
+  .alert-dismissible .close {
+    color: white !important;
+  }
+}
+
+.alert-info {
+  color: white !important;
 }
 

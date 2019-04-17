@@ -59,11 +59,8 @@ window.onscroll = function(){
 }
 
 
-// const button = document.querySelectorAll(".purchase-btn");
 
-// button[0].addEventListener('click', (okay)=> {
-//   button[0].value = 'Added'
-// })
+
 
 
 

@@ -69,3 +69,45 @@
     justify-content: space-between;
   }
 }
+
+.sweet-secret-background {
+  background: #FF443A !important;
+}
+
+.exotic-foreplay-background {
+  background: #FFC914 !important;
+}
+
+.fruity-fetish-background {
+  background: #FF006E !important;
+}
+
+.heavy-hickey-background {
+  background: #CE212C !important;
+}
+
+.flavorful-flirt-background {
+  background: #9E0059 !important;
+}
+
+.rich-confession-background {
+  background: #C62137 !important;
+}
+
+.empty-box-flex {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.empty-box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  i {
+    font-size: 50px;
+  }
+}

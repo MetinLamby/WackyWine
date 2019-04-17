@@ -15,6 +15,22 @@
   }
 }
 
+.wacky-btn-inactive {
+  background: grey;
+  height: 30px;
+  width: 160px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  padding: 0 !important;
+  p {
+    margin-bottom: 0 !important;
+    color: white !important;
+  }
+}
+
 .wacky-btn-opposite {
   background: #000D19;
   height: 30px;

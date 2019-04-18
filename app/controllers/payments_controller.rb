@@ -22,6 +22,7 @@ class PaymentsController < ApplicationController
           country: params[:stripeBillingAddressCountry],
         },
       },
+      description:  "#{@order.wine_sku}",
       )
 
 

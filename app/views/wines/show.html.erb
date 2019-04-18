@@ -84,8 +84,10 @@
   </div>
 </div>
 
+<hr style="margin: 0 !important" id="wine-description">
+
 <div class="arrow-down">
-  <i id="downarrow" class="fas fa-chevron-down"></i>
+  <a href="#wine-description"><i id="downarrow" class="fas fa-chevron-down"></i></a>
 </div>
 
 
@@ -93,7 +95,7 @@
 <div class="container description-text">
 
   <div class="wine-desc-text">
-    <h2>Description</h2>
+    <h2 style="margin-top: 10px;">Description</h2>
     <div >
 <p class="description-show"></p>
     </div>
@@ -208,10 +210,7 @@
 </div>
 
 <div class="pay-button">
-  <%= form_tag orders_path do %>
-  <%= hidden_field_tag 'wine_id', @wine.id %>
-  <%= submit_tag 'Pay', class: 'purchase-btn' %>
-  <% end %>
+  <%= render "order_items/form", wine: @wine, order_item: @order_item %>
 </div>
 
 

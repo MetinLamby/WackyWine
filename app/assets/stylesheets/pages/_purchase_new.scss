@@ -52,3 +52,51 @@
     }
   }
 }
+
+
+
+
+
+.order-price-payment {
+  background: #FFD6D6;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h2 {
+    color: #000D19;
+  }
+  p {
+    color: #000D19;
+  }
+  hr {
+    border: solid 1px #000D19;
+  }
+  .price-details {
+    margin: 100px;
+    width: 300px;
+  }
+  .details-text-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  button {
+      background: #FF6B6B;
+      height: 30px;
+      width: 160px;
+      border-radius: 15px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+      span {
+        background: transparent !important;
+      }
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+}

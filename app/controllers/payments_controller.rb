@@ -12,9 +12,19 @@ class PaymentsController < ApplicationController
       # addresslineone:  params[:stripeBillingAddressLine1],
       # addresszip:  params[:stripeBillingAddressZip],
       # addressstate:  params[:stripeBillingAddressState],
-      # addresscity:  params[:stripeBillingAddressCity],
-      # billing_address_country:  params[:stripeBillingAddressCountry],
+      shipping: {
+        name: params[:stripeBillingName],
+        address: {
+          line1: params[:stripeBillingAddressLine1],
+          city: params[:stripeBillingAddressCity],
+          state: params[:stripeBillingAddressState],
+          postal_code: params[:stripeBillingAddressZip],
+          country: params[:stripeBillingAddressCountry],
+        },
+      },
       )
+
+
 
     charge = Stripe::Charge.create(
     customer:     customer.id,   # You should store this customer id and re-use it.

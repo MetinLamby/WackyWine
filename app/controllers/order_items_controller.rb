@@ -29,13 +29,13 @@ class OrderItemsController < ApplicationController
   private
 
   def new_order
-    if Order.where(user: current_user).last.state == 'paid'
+    if current_user.orders.empty?
+      @order = Order.create!(state: 'pending', user: current_user)
+    elsif Order.where(user: current_user).last.state == 'paid'
       @order = Order.create!(state: 'pending', user: current_user)
     elsif Order.where(user: current_user).last.state == 'pending'
       # @order = Order.find_by(user: current_user)
       @order = Order.where({user: current_user, state: 'pending'}).last
-    # else
-    #   @order = Order.create!(state: 'pending', user: current_user)
     end
   end
 end

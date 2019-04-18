@@ -37,7 +37,7 @@ class PaymentsController < ApplicationController
     @order.update(payment: charge.to_json, state: 'paid')
     # redirect_to order_path(@order)
     redirect_to wines_path
-    flash[:notice] = "We received your order  ✅"
+    flash[:notice] = "Thank you, we received your order  ✅"
 
   rescue Stripe::CardError => e
     flash[:alert] = e.message

@@ -24,7 +24,7 @@
     <h3>White Wines</h3>
     <div style="margin-top: 40px" class="row">
       <% @white_wines.each do |wine|%>
-      <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <%= link_to wine_path(wine.id) do  %>
         <div class="wine-card">
           <div class="wine-card-product-image">
@@ -92,7 +92,7 @@
     <h3>Red Wines</h3>
     <div style="margin-top: 40px" class="row">
       <% @red_wines.each do |wine|%>
-      <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <%= link_to wine_path(wine.id) do  %>
         <div class="wine-card">
           <div class="wine-card-product-image">

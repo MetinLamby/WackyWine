@@ -1,13 +1,24 @@
-.fifty-fifty {
+.nopadding {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.showrow {
   margin-top: 80px;
-  display: flex;
+  min-height: 80vh;
+}
+
+.fifty-fifty {
+  /*margin-top: 80px;*/
+/*  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 80vh;
+  width: 100vw;*/
+  height: 100%;
   .first-half-text {
     height: 100%;
-    width: 50%;
+    /*width: 50%;*/
+    width: 100%;
     background: #FF443A;
     display: flex;
     align-items: center;
@@ -48,7 +59,8 @@
   }
   .second-half-product {
     height: 100%;
-    width: 50%;
+    /*width: 50%;*/
+    width: 100%;
     background: #FFDDDB;
     display: flex;
     align-items: center;

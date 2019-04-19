@@ -1,6 +1,6 @@
 <div style="margin-top: 80px;">
   <div id="smallbanner" class="small-banner">
-    <div class="container">
+    <div class="container smallbannercontainer">
       <div class="small-banner-text">
         <h1>Tasty Wine made just for You</h1>
         <p>Quality wine for you to enjoy.</p>
@@ -20,7 +20,7 @@
 <!--   White wines index -->
 
   <% if @white_wines.present? %>
-  <div style="margin-top: 100px; margin-bottom: 100px;" class="container">
+  <div style="margin-top: 80px; margin-bottom: 80px;" class="container">
     <h3>White Wines</h3>
     <div style="margin-top: 40px" class="row">
       <% @white_wines.each do |wine|%>
@@ -64,7 +64,7 @@
             <div>
               <h4 class="wine-name"><%= wine.name %></h4>
             </div>
-            <div style="display: flex;">
+            <div class="winefruitnamescard">
               <% wine.fruits.each do |fruit|%>
                 <p style="margin-right: 10px; color: grey"><%= fruit.name %></p>
               <% end %>
@@ -88,7 +88,7 @@
 <!--   Red wines index -->
 
 <% if @red_wines.present? %>
-  <div style="margin-top: 100px; margin-bottom: 100px;" class="container">
+  <div style="margin-top: 80px; margin-bottom: 80px;" class="container">
     <h3>Red Wines</h3>
     <div style="margin-top: 40px" class="row">
       <% @red_wines.each do |wine|%>
@@ -132,7 +132,7 @@
             <div>
               <h4 class="wine-name"><%= wine.name %></h4>
             </div>
-            <div style="display: flex;">
+            <div class="winefruitnamescard">
               <% wine.fruits.each do |fruit|%>
                 <p style="margin-right: 10px; color: grey"><%= fruit.name %></p>
               <% end %>

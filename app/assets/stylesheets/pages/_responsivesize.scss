@@ -1,15 +1,196 @@
 /*Pone size*/
 @media only screen and (min-width: 320px) {
+  .nav-bar-logo {
+    display: none;
+  }
+  .banner {
+    .banner-text {
+      text-align: center;
+      width: 90%;
+    }
+    h1 {
+      transform: scale(1);
+    }
+    p {
+      transform: scale(1);
+    }
+  }
+  .small-banner {
+    .small-banner-text {
+      text-align: center;
+      width: 100%;
+    }
+    h1 {
+      transform: scale(1);
+    }
+    p {
+      transform: scale(1);
+    }
+  }
+  .products {
+    display: none;
+  }
+  .instagram {
+    display: none;
+  }
+  .footer {
+    height: 100vh;
+    .footer-content {
+      flex-direction: column;
+      .footer-part {
+        width: 70%;
+      }
+    }
+  }
+  .wine-index-filters {
+    display: none;
+  }
 
+  .winefruitnamescard {
+    display: none;
+  }
+  .arrow-down {
+    display: none;
+  }
+  .description-text {
+    margin-top: 30px;
+  }
+  .fruitslist {
+    display: block;
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    .card-product {
+      width: 100%;
+    }
+  }
+  .order-overview {
+    flex-direction: column;
+  }
+  .order-products {
+    width: 100%;
+  }
+  .order-price {
+    min-height: 55vh;
+    width: 100%;
+  }
+  .order-products-text {
+    width: 85%;
+    margin: 50px 0;
+  }
+  .price-details {
+  margin: 40px;
+  }
+  .team-desc {
+    display: none;
+  }
+  .about-banner {
+    height: 100vh;
+  }
+  .small-banner {
+    height: 90vh;
+  }
 }
 
 
 /*Small mac*/
 @media only screen and (min-width: 1030px) {
+  .nav-bar-logo {
+    display: flex;
+  }
   .new-margin {
     margin-right: 15px;
     margin-left: 15px;
     transition: margin-right 150ms linear;
+  }
+  .banner {
+    .banner-text {
+      text-align: center;
+      width: 100%;
+      h1 {
+        transform: scale(1.3);
+      }
+      p {
+        transform: scale(1.3);
+      }
+    }
+  }
+  .small-banner {
+    .small-banner-text {
+      text-align: center;
+      width: 100%;
+    }
+   h1 {
+        transform: scale(1.3);
+      }
+      p {
+        transform: scale(1.3);
+      }
+  }
+  .products {
+    display: flex;
+  }
+
+  .instagram {
+    display: flex;
+  }
+  .footer {
+    height: 50vh;
+    .footer-content {
+      flex-direction: initial;
+      .footer-part {
+        width: 25%;
+      }
+    }
+  }
+  .wine-index-filters {
+    display: flex;
+  }
+
+  .winefruitnamescard {
+    display: flex;
+  }
+  .arrow-down {
+    display: flex;
+  }
+  .description-text {
+    margin-top: 0px;
+  }
+
+  .fruitslist {
+    display: flex;
+    width: 100vw;
+    margin-left: 70px;
+    margin-right: 70px;
+    .card-product {
+      width: 825px;
+    }
+  }
+  .order-overview {
+    flex-direction: row;
+  }
+  .order-products {
+    width: 65%;
+  }
+  .order-price {
+    width: 35%;
+    min-height: 100vh;
+  }
+  .order-products-text {
+    margin: 100px;
+    width: 70%;
+  }
+  .price-details {
+    margin: 100px;
+  }
+  .team-desc {
+    display: flex;
+  }
+  .about-banner {
+    height: 80vh;
+  }
+  .small-banner {
+    height: 60vh;
   }
 }
 

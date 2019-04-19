@@ -36,18 +36,18 @@
     }
   }
   .order-products-text {
-    margin: 100px;
     min-height: 70%;
-    width: 70%;
+/*    margin: 100px;
+    width: 70%;*/
   }
 }
 
 .order-price {
   background: #FFD6D6;
-  height: 100vh;
+/*  height: 100vh;
+  width: 35%;*/
   position: sticky !important;
   top: 80px;
-  width: 35%;
 /*  display: flex;
   align-items: center;
   justify-content: space-around;*/
@@ -60,9 +60,9 @@
   hr {
     border: solid 1px #000D19;
   }
-  .price-details {
+/*  .price-details {
     margin: 100px;
-  }
+  }*/
   .details-text-inner {
     display: flex;
     align-items: center;

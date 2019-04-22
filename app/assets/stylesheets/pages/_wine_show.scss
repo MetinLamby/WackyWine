@@ -168,9 +168,13 @@
   }
   @keyframes updown {
    0% {margin-bottom: 0px;}
-   50% {margin-bottom: 7px;}
+   50% {margin-bottom: 10px;}
    100% {margin-bottom: 0px;}
 }
+}
+
+#downarrow {
+  color: black;
 }
 
 .description-text {

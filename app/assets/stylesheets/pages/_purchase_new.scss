@@ -64,14 +64,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  h2 {
-    color: #000D19;
+/*  h2 {
+    color: black;
   }
   p {
-    color: #000D19;
-  }
+    color: black;
+  }*/
   hr {
-    border: solid 1px #000D19;
+    border: solid 1px black;
   }
   .price-details {
     margin: 100px;
@@ -94,9 +94,20 @@
       border: none;
       span {
         background: transparent !important;
+        font-family: 'Quattrocento', "Helvetica", "sans-serif" !important;
+        text-shadow: none !important;
+        font-size: 15px !important;
       }
       p {
         margin-bottom: 0 !important;
       }
     }
 }
+
+/*.order-price-payment:hover {
+  button { background: white;
+    transition: background 250ms linear;
+    color: #FF6B6B;
+    border: solid 3px #FF6B6B;
+  }
+}*/

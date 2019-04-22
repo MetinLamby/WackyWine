@@ -22,7 +22,7 @@
   <% if @white_wines.present? %>
   <div style="margin-top: 80px; margin-bottom: 80px;" class="container">
     <h3>White Wines</h3>
-    <div style="margin-top: 40px" class="row">
+    <div class="row">
       <% @white_wines.each do |wine|%>
       <div class="col-sm-12 col-md-6 col-lg-4">
         <%= link_to wine_path(wine.id) do  %>
@@ -90,7 +90,7 @@
 <% if @red_wines.present? %>
   <div style="margin-top: 80px; margin-bottom: 80px;" class="container">
     <h3>Red Wines</h3>
-    <div style="margin-top: 40px" class="row">
+    <div class="row">
       <% @red_wines.each do |wine|%>
       <div class="col-sm-12 col-md-6 col-lg-4">
         <%= link_to wine_path(wine.id) do  %>

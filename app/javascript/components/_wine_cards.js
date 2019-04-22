@@ -53,7 +53,7 @@ window.onscroll = function(){
     // navbar.style.borderBottom: "solid 1px white";
   }
   else{
-    downarrow.style.color = "white";
+    downarrow.style.color = "black";
     // navbar.style.borderBottom: "none";
   }
 }

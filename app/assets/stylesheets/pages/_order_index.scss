@@ -7,13 +7,14 @@
 
 
 .order-products {
+  background: #f8f6f4;
   min-height: 100%;
   width: 65%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   hr {
-    border: solid 1px white;
+    border: solid 1px black;
   }
   .product-list {
     display: flex;
@@ -51,14 +52,14 @@
 /*  display: flex;
   align-items: center;
   justify-content: space-around;*/
-  h2 {
-    color: #000D19;
+/*  h2 {
+    color: white;
   }
   p {
-    color: #000D19;
-  }
+    color: white;
+  }*/
   hr {
-    border: solid 1px #000D19;
+    border: solid 1px black;
   }
 /*  .price-details {
     margin: 100px;

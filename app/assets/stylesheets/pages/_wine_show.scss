@@ -8,6 +8,8 @@
   min-height: 80vh;
 }
 
+
+
 .fifty-fifty {
   /*margin-top: 80px;*/
 /*  display: flex;
@@ -33,9 +35,6 @@
       align-items: flex-start;
       justify-content: space-around;
       flex-direction: column;
-      h2 {
-        color: #000D19;
-      }
       .fruits-show-page {
         margin-top: 0 !important;
         display: flex;
@@ -180,6 +179,7 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 50px;
+  padding-bottom: 70px;
 
   .wine-desc-text {
     width: 825px;
@@ -222,7 +222,7 @@
   .fruit-img {
     height: 100%;
     width: 120px;
-    background: #000D19;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: space-around;

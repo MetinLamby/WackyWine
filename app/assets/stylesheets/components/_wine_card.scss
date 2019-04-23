@@ -8,17 +8,17 @@
 }
 
 .wine-card {
+  box-shadow: 0 0 10px #000D19;
   height: 500px;
   width: auto;
   border-radius: 10px;
-  /*border: solid 2px #F8DBC8;*/
-  border: solid 2px #FFE4E4;
+  /*border: solid 2px #FFE4E4;*/
   margin-top: 20px;
 }
 
 .wine-card:hover {
   /*box-shadow: 0 0 25px #F8DBC8;*/
-  box-shadow: 0 0 15px #000D19;
+  box-shadow: 0 0 25px #000D19;
   transition: box-shadow 300ms linear;
   border: none;
   transform: scale(1.02);

@@ -1,5 +1,5 @@
 .order-overview {
-  margin-top: 80px;
+  /*padding-top: 80px;*/
   display: flex;
   min-height: 91vh;
   width: 100vw;
@@ -7,6 +7,7 @@
 
 
 .order-products {
+  padding-top: 80px;
   background: #f8f6f4;
   min-height: 100%;
   width: 65%;
@@ -44,6 +45,7 @@
 }
 
 .order-price {
+  padding-top: 80px;
   background: #FFD6D6;
 /*  height: 100vh;
   width: 35%;*/

@@ -12,7 +12,7 @@ class OrderItemsController < ApplicationController
     @order_item.wine = @wine
     if @order_item.save
       redirect_to wine_path(@order_item.wine)
-      flash[:notice] = "You added #{@wine.name} to your box"
+      flash[:notice] = "You added #{@wine.name} to your box 👍"
     else
       flash[:alert] = "please try again"
       render "wines/show"

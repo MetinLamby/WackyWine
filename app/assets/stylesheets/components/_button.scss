@@ -1,17 +1,18 @@
 .wacky-btn {
   background: #FF6B6B;
+  /*transition: background 250ms linear;*/
   height: 30px;
   width: 160px;
   border-radius: 15px;
-  color: #000D19;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: none;
+  /*border: solid 1px #FF6B6B;*/
   padding: 0 !important;
   p {
     margin-bottom: 0 !important;
-    color: #000D19;
+    color: white;
   }
 }
 
@@ -32,7 +33,7 @@
 }
 
 .wacky-btn-opposite {
-  background: #000D19;
+  background: white;
   height: 30px;
   width: 160px;
   border-radius: 15px;
@@ -51,7 +52,7 @@
   height: 40px;
   width: 175px;
   border-radius: 15px;
-  color: #000D19;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -62,7 +63,8 @@
 }
 
 .wacky-btn:hover {
-  background: #000D19;
+  background: white;
+  transition: background 250ms linear;
   color: #FF6B6B;
   border: solid 3px #FF6B6B;
   p {
@@ -72,11 +74,13 @@
 
 .wacky-btn-opposite:hover {
   background: #FF6B6B;
-  color: #000D19;
+  transition: background 250ms linear;
+  color: white;
   border: none;
 }
 .purchase-btn:hover {
-  background: #000D19;
+  background: white;
+  transition: background 250ms linear;
   color: #FF6B6B;
   border: solid 3px #FF6B6B;
 }

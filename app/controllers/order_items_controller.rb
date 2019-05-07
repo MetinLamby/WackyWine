@@ -24,6 +24,13 @@ class OrderItemsController < ApplicationController
     @order_item.destroy
 
     redirect_to orders_path
+
+    # respond_to do |format|
+    #   format.html { redirect_to order_items_url }
+    #   format.json { head :no_content }
+    #   format.js   { render :layout => false }
+    # end
+
   end
 
   private
@@ -39,3 +46,4 @@ class OrderItemsController < ApplicationController
     end
   end
 end
+

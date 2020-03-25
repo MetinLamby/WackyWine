@@ -32,16 +32,17 @@ class OrdersController < ApplicationController
     end
   end
 
-  # def show
-  #   @order_items = Order.find_by(user: current_user).order_items
-  # end
 
-  # def create
-  #   wine = Wine.find(params[:wine_id])
-  #   order  = Order.create!(wine_sku: wine.sku, amount: wine.price, state: 'pending', user: current_user)
+  def show
+    @order_items = Order.find_by(user: current_user).order_items
+  end
 
-  #   redirect_to new_order_payment_path(order)
-  # end
+  def create
+    wine = Wine.find(params[:wine_id])
+    order  = Order.create!(wine_sku: wine.sku, amount: wine.price, state: 'pending', user: current_user)
+
+    redirect_to new_order_payment_path(order)
+  end
 
 
   def destroy

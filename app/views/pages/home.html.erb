@@ -175,4 +175,19 @@
   </div>
 
 
+<script type="text/javascript">
+
+  $(function() {
+
+   $("body").mousewheel(function(event, delta) {
+
+      this.scrollDown -= (delta * 30);
+
+      event.preventDefault();
+
+   });
+
+});
+</script>
+
 

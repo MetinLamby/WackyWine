@@ -52,28 +52,13 @@ window.onscroll = function(){
   if (window.pageYOffset > 80) {
     navbar.style.background = "white";
     downarrow.style.color = "transparent";
-    // navbar.style.borderBottom: "solid 1px white";
   }
   else {
     navbar.style.background = "transparent";
     downarrow.style.color = "black";
-    // navbar.style.borderBottom: "none";
   }
 }
 
-// adding js to the navabar
-
-
-// window.onscroll = function(){
-//   if (window.pageYOffset > 80) {
-//     navbar.style.background = "white";
-//     // navbar.style.borderBottom: "solid 1px white";
-//   }
-//   else {
-//     navbar.style.background = "transparent";
-//     // navbar.style.borderBottom: "none";
-//   }
-// }
 
 
 
